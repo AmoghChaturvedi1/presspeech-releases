@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Presspeech — push-to-talk dictation for Mac</title>
+<meta name="description" content="Hold a key, speak, release. Your words land where your cursor is. Everything runs on your Mac.">
+<style>
+  :root { color-scheme: light dark; --fg: #111; --muted: #666; --bg: #fff; --accent: #111; --accent-fg: #fff; --card: #f4f4f5; }
+  @media (prefers-color-scheme: dark) { :root { --fg: #f2f2f2; --muted: #9a9a9a; --bg: #0b0b0c; --accent: #f2f2f2; --accent-fg: #0b0b0c; --card: #17171a; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 17px/1.55 -apple-system, BlinkMacSystemFont, "SF Pro Text", Inter, system-ui, sans-serif; color: var(--fg); background: var(--bg); -webkit-font-smoothing: antialiased; }
+  main { max-width: 640px; margin: 0 auto; padding: 96px 24px 80px; }
+  h1 { font-size: 44px; line-height: 1.1; letter-spacing: -0.02em; margin: 0 0 16px; }
+  .lead { font-size: 21px; color: var(--muted); margin: 0 0 36px; }
+  .cta { display: inline-block; background: var(--accent); color: var(--accent-fg); text-decoration: none; font-weight: 600; padding: 14px 22px; border-radius: 12px; }
+  .cta:hover { opacity: .9; }
+  .fine { color: var(--muted); font-size: 14px; margin: 12px 0 0; }
+  h2 { font-size: 15px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 56px 0 12px; }
+  ol, ul { padding-left: 22px; margin: 0; }
+  li { margin: 8px 0; }
+  .card { background: var(--card); border-radius: 14px; padding: 18px 20px; }
+  code { font: 14px ui-monospace, SF Mono, Menlo, monospace; background: var(--card); padding: 2px 6px; border-radius: 6px; }
+  footer { margin-top: 64px; color: var(--muted); font-size: 14px; }
+  a { color: inherit; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Presspeech</h1>
+  <p class="lead">Hold a key, speak, release. Your words land where your cursor is — in any app. Everything is transcribed on your Mac; no audio or text leaves it.</p>
+
+  <a class="cta" href="https://github.com/AmoghChaturvedi1/presspeech-releases/releases/latest/download/Presspeech.dmg">Download for Mac</a>
+  <p class="fine">Apple silicon · macOS 14 or later · free · updates itself</p>
+
+  <h2>Install</h2>
+  <div class="card">
+    <ol>
+      <li>Open the downloaded <code>Presspeech.dmg</code> and drag Presspeech into the Applications folder beside it.</li>
+      <li>Open Presspeech from Applications. It lives in the menu bar.</li>
+      <li>Allow Microphone and Accessibility when asked — the first is your voice, the second is how the words get typed for you. The first launch downloads the speech model (about 450 MB).</li>
+    </ol>
+  </div>
+
+  <h2 id="unverified">If macOS says it “could not verify” Presspeech</h2>
+  <div class="card">
+    <p style="margin:0 0 10px">Presspeech isn't in the App Store yet, so the first launch may show that message. Click <b>Done</b>, then open <b>System Settings → Privacy &amp; Security</b>, scroll to the bottom and click <b>Open Anyway</b>. This happens once; updates never ask again.</p>
+  </div>
+
+  <h2>Use</h2>
+  <ul>
+    <li>Hold <b>Fn</b>, speak, release — the text is pasted at your cursor. (Change the key in the menu.)</li>
+    <li>Double-press to keep recording hands-free; press again to stop, Escape to cancel.</li>
+    <li>Say “new line”, “period”, “comma” for punctuation and formatting.</li>
+  </ul>
+
+  <footer>Built on NVIDIA Parakeet running on the Neural Engine. <a href="https://github.com/AmoghChaturvedi1/presspeech-releases/releases">All releases</a>.</footer>
+</main>
+</body>
+</html>
